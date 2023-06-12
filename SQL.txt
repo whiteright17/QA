@@ -1,9 +1,9 @@
-SELECT выбор колонки * FROM с какой таблицы Customers
-WHERE значение в столбце  PostalCode больше > 67000
-Limit лимит строчек 5;
+SELECT РІС‹Р±РѕСЂ РєРѕР»РѕРЅРєРё * FROM СЃ РєР°РєРѕР№ С‚Р°Р±Р»РёС†С‹ Customers
+WHERE Р·РЅР°С‡РµРЅРёРµ РІ СЃС‚РѕР»Р±С†Рµ  PostalCode Р±РѕР»СЊС€Рµ > 67000
+Limit Р»РёРјРёС‚ СЃС‚СЂРѕС‡РµРє 5;
 
 SELECT * FROM Customers
-WHERE CustomerName	LIKE  "a%"; все данные в данной строчке которые начинаються на "а"
+WHERE CustomerName	LIKE  "a%"; РІСЃРµ РґР°РЅРЅС‹Рµ РІ РґР°РЅРЅРѕР№ СЃС‚СЂРѕС‡РєРµ РєРѕС‚РѕСЂС‹Рµ РЅР°С‡РёРЅР°СЋС‚СЊСЃСЏ РЅР° "Р°"
 
 SELECT * FROM [Customers]
 WHERE Country = "Germany" AND City = "Berlin";
@@ -14,23 +14,23 @@ WHERE City = "London" OR City = "Berlin";
 
 SELECT * FROM [Customers]
 WHERE City = "London" OR City = "Berlin"
-ORDER BY ContactName DESC; сортировка от я до а
+ORDER BY ContactName DESC; СЃРѕСЂС‚РёСЂРѕРІРєР° РѕС‚ СЏ РґРѕ Р°
 
 SELECT * FROM [Customers]
 WHERE City = "London" OR City = "Berlin"
-ORDER BY ContactName; сортировка от а до я
+ORDER BY ContactName; СЃРѕСЂС‚РёСЂРѕРІРєР° РѕС‚ Р° РґРѕ СЏ
 
 INSERT INTO Customers
 (CustomerName,ContactName,Address,City,PostalCode,Country)
 VALUES
-('Vadym','Andriienko','90 Centralna','Pavlograd','51400','Ukraine'); добавить данные
+('Vadym','Andriienko','90 Centralna','Pavlograd','51400','Ukraine'); РґРѕР±Р°РІРёС‚СЊ РґР°РЅРЅС‹Рµ
 
 UPDATE Customers
 SET CustomerName = 'Oleg', City = 'Dnepr'
 WHERE CustomerName ='Vadym';
 
 SELECT * FROM [Products]
-WHERE Price BETWEEN 50 AND 100; цена от и до
+WHERE Price BETWEEN 50 AND 100; С†РµРЅР° РѕС‚ Рё РґРѕ
 
 SELECT distinct City FROM [Customers]
-WHERE Country = 'UK'; значение которые не повторяються.
+WHERE Country = 'UK'; Р·РЅР°С‡РµРЅРёРµ РєРѕС‚РѕСЂС‹Рµ РЅРµ РїРѕРІС‚РѕСЂСЏСЋС‚СЊСЃСЏ.
