@@ -1,0 +1,36 @@
+SELECT выбор колонки * FROM с какой таблицы Customers
+WHERE значение в столбце  PostalCode больше > 67000
+Limit лимит строчек 5;
+
+SELECT * FROM Customers
+WHERE CustomerName	LIKE  "a%"; все данные в данной строчке которые начинаються на "а"
+
+SELECT * FROM [Customers]
+WHERE Country = "Germany" AND City = "Berlin";
+
+
+SELECT * FROM [Customers]
+WHERE City = "London" OR City = "Berlin";
+
+SELECT * FROM [Customers]
+WHERE City = "London" OR City = "Berlin"
+ORDER BY ContactName DESC; сортировка от я до а
+
+SELECT * FROM [Customers]
+WHERE City = "London" OR City = "Berlin"
+ORDER BY ContactName; сортировка от а до я
+
+INSERT INTO Customers
+(CustomerName,ContactName,Address,City,PostalCode,Country)
+VALUES
+('Vadym','Andriienko','90 Centralna','Pavlograd','51400','Ukraine'); добавить данные
+
+UPDATE Customers
+SET CustomerName = 'Oleg', City = 'Dnepr'
+WHERE CustomerName ='Vadym';
+
+SELECT * FROM [Products]
+WHERE Price BETWEEN 50 AND 100; цена от и до
+
+SELECT distinct City FROM [Customers]
+WHERE Country = 'UK'; значение которые не повторяються.
